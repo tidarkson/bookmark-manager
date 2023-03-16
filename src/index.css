@@ -11,13 +11,47 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* nav ul {
+  @apply flex items-center justify-center flex-col;
+} */
+
+nav ul li button {
+  color: #fff;
+  font-size: 16px;
+}
+
+nav {
+  @apply flex justify-between flex-col opacity-0 absolute -z-50 lg:opacity-100 lg:relative lg:z-auto;
+
+}
+
+nav.open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: hsl(231, 69%, 60%, 0.9);
+  z-index: 999;
+  padding: 32px;
+  opacity: 1;
+}
+
 h1, h2, h3, h4 {
   @apply text-slate-800 font-bold
 }
 
+.btn-blue {
+  background-color: hsl(231, 69%, 60%);
+}
+
+.btn-red {
+  background-color: hsl(0, 94%, 66%);
+}
+
 .bg {
   position: absolute;
-  right: -32px;
+  /* right: -32px; */
   bottom: 0;
   height: 250px;
   width: 100%;
@@ -64,5 +98,12 @@ p {
   .bg-left {
     left: -40%;
     width: 120%;
+  }
+
+  nav.open {
+    background-color: transparent;
+    position: relative;
+    z-index: auto;
+    padding: 0;
   }
 }

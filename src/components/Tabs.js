@@ -60,7 +60,7 @@ function Tabs() {
                         <article className='text-center lg:text-left'>
                             <h2 className='text-3xl mt-16 mb-8'>{title}</h2>
                             <p className='mb-10'>{desc}</p>
-                            <button className='bg-indigo-600 text-white py-2 px-4 rounded shadow-lg font-bold hover:opacity-75'>{link}</button>
+                            <button className='btn-blue text-white py-2 px-4 rounded shadow-lg font-bold hover:opacity-75'>{link}</button>
                         </article>
                     </div>
                 </div>
